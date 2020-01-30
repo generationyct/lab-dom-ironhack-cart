@@ -23,7 +23,12 @@ const calcSubTotal = () => {
   document.querySelector('#subtot-span').innerHTML = $subTotal
 }
 
-function calcAll() {
+// function calcAll() {
   // Iteration 1.2
-}
-$calc.onclick = calcAll;
+// }
+// $calc.onclick = calcAll;
+
+const calcAll = document.getElementById('calc').addEventListener("click", () => {
+  let totalCost = $subTotal
+  document.getElementById('total').innerHTML = $subTotal
+})
